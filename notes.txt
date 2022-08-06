@@ -1,0 +1,15 @@
+socket is an object (that contains diff methods), it contains information about a new connection
+
+socket.emit - takes arguements, the event and data(data to be sent)
+socket.on - listens for socket.emit and takes arguments, the event emitted and a callback, in the right order. plus, acknowledgement
+
+socket.emit - emits event to a specific connection
+socket.broadcast.emit - emits event to all other connections, except the main socket
+io.emit - emits event to all connections
+
+socket.broadcast.to(...).emit - to every one else in a particular room
+io.to.emit - to everyone in a particular room
+
+socket.join - allows people to join a given room
+
+in chat.html ... lists ... <li></li> : # signifies opening of the array. / signifies closing of the array. the effect produced there will be applied to every item in that array.
